@@ -1,0 +1,82 @@
+.navbar{
+    background-color: #cad0d5;
+    display: block;
+    width: 100%;
+    height: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar input{
+    display: none;
+}
+
+.logo{
+    line-height: 80px;
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.nav_link{
+    float: right;
+    margin: 0px 30px 0px 0px;
+}
+
+.nav_link li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.navigator{
+    padding: 7px;
+    border-radius: 4px;
+}
+.navigator:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.bar{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .bar{
+        display: block;
+        font-size: 16px;
+        height: 50px;
+        float: right;
+        line-height: 110px;
+        margin-right: 40px;
+    }
+    .icon{
+        width: 40px;
+        padding: 0 4px;
+        border-radius: 4px;
+    }
+    .icon:hover{
+        background-color: aliceblue;
+        cursor: pointer;
+    }
+
+    .nav_link{
+        position: fixed;
+        background-color: #cad0d5;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        left: -100%
+    }
+
+
+    .nav_link li{
+        display: block;
+
+    }
+
+   .navbar input:checked ~ ul{
+        left: 0
+    }
+  }
